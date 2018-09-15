@@ -18,11 +18,18 @@ import SvgMap from '../resource/SvgMap';
 
 import PngMap from '../resource/PngMap';
 
-
 /**
- * 获取验证码的组件
- */
-export default class PopverView extends Component {
+*   <BBPopver
+*       ref={ref=>this.popver=ref}
+*       position='top'        
+*       arrowRect={}
+*       contentRect={}
+*   >
+*       {your popver content}
+*   </BBPopver>
+*/
+
+export default class BBPopver extends Component {
 
     static defaultProps = {
         position: 'left'
